@@ -23,9 +23,9 @@ function HomeProduct() {
       <h2 className="bg-black text-white p-3">Our Products</h2>
       <br/>
       <div className='d-flex'>
-      <Row xs={1} sm={2} md={3} lg={4} className="g-4  justify-content-center">
+      <Row xs={1} sm={2} md={3} className="justify-content-center">
       {start.map((eachProduct)=>(
-        <Card className='m-3 p-1' style={{ width: "18rem"}}>
+        <Card className='m-3 p-1' style={{ width: "18rem"}} key={eachProduct.id}>
         <Card.Img variant="top" src={require(`./assets/${eachProduct.image}`)} style={{ height: "18rem"}}/>
         <Card.Body>
           <Card.Title>{eachProduct.name}</Card.Title>

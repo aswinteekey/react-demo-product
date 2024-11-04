@@ -38,5 +38,13 @@ export const productData=[
         price:130,
         qty:1,
         image:"cover.webp"
+    },
+    {
+        id:6,
+        name:'Charger',
+        desc:'just an charger,nothing else',
+        price:160,
+        qty:1,
+        image:"charger.jpg"
     }
 ]
